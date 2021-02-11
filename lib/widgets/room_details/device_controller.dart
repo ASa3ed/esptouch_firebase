@@ -6,16 +6,18 @@ class DeviceController extends StatelessWidget {
   final bool status;
   final String heading;
   final String subHeading;
+  final String macaddress;
 
   const DeviceController({Key key,
     this.status = false,
+    this.macaddress = '',
     this.heading = '',
     this.subHeading = ''
   }): super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    double _value = 50;
+    double _value = 100;
 
     return Column(
       children: [
@@ -75,7 +77,7 @@ class DeviceController extends StatelessWidget {
                           builder: (BuildContext context, StateSetter setState) {
                             return Slider(
                                 value: _value,
-                                max: 100.0,
+                                max: 100,
                                 label: '${(_value / 100 * 100).toInt()}%',
                                 onChanged: (value) {
                                   setState(() {

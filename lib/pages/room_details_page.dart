@@ -71,7 +71,7 @@ class _RoomDetailsPageState extends State<RoomDetailsPage> with SingleTickerProv
               padding: EdgeInsets.only(right: 6.0),
               child: const Device(
                 name: 'LAMP',
-                status: false,
+                status: true,
                 image: 'assets/images/lamp_icon.png',
                 heading: 'PENDENT LAMP',
                 subHeading: 'Porchroom',

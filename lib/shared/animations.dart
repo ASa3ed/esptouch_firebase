@@ -31,7 +31,7 @@ class RoomDetailsEnterAnimations {
             ),
           ),
         ),
-        playerTranslation = new Tween(begin: 800.0, end: 0.0).animate(
+      playerTranslation = new Tween(begin: 800.0, end: 0.0).animate(
           new CurvedAnimation(
             parent: controller,
             curve: new Interval(
